@@ -17,3 +17,6 @@ A commit is a save point for the project. A good commit message is detailed enou
 * What is a merge conflict?
 
 When there is contradictory code for the same project in different branches that you try to merge back together with the master branch (ex. if one branch deletes code while the other modifies it). 
+
+
+THIS IS MY MINOR EDIT! 
