@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practice Form</title>
+</head>
+<body>
+<form name="Fave restaurant" action="success.html" method="post">
+  <fieldset>
+    <div>
+      <label> Name:</label>
+      <input type="text" name="Name">
+    </div>
+
+    <div>
+      <label>Email:</label>
+      <input type="email" name="email">
+    </div>
+
+    <div>
+      <label>Password:</label>
+      <input type="password" name="password">
+    </div>
+
+    <div>
+      <label>Fave East Asian cuisine:</label>
+      <select name="food">
+        <option value="food">Chinese</option>
+        <option value="food">Japanese</option>
+        <option value="food">Korean</option>
+        <option value="food">Hong Kongese</option>
+        <option value="food">Mongolian</option>
+        <option value="food">Taiwanese</option>
+      </select>
+    </div>
+
+    <div>
+       <input type="checkbox" name="cb-agree" value="agree">
+      I promise I answered this very important question truthfully.
+    </div>
+
+    <div> 
+     	<legend>Your comments</legend>  
+    	<p><textarea class="noscrollbars" onkeyup="autoGrow(this);"></textarea></p>
+  	</div>
+
+  </fieldset>
+  
+  <button type="submit">Save this East Asian food choice</button>
+</form>
+</body>
+</html>
