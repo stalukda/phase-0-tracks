@@ -1,0 +1,18 @@
+#octo {
+	position: absolute;
+	margin: 70px; 
+	z-index: -3;
+}
+
+#hat {
+    position: relative;
+    left: 320px;
+    z-index: -2;
+}
+
+#glasses {
+    position: relative;
+    left: 530px;
+    top: 60px;
+    z-index: -1;
+}
