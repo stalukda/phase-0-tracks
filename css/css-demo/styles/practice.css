@@ -1,0 +1,32 @@
+#contact-info {
+	font-size: .8em;
+}
+
+.job{
+	background-color: #e9e5dc; 
+	border-radius: 35px;
+    padding: 20px; 
+    margin-top: 20px;
+}
+
+.bullets {
+	font-size: .8em;
+}
+
+/* unvisited link */
+a:link {
+    color: #FF0000;
+}
+
+/* visited link */
+a:visited {
+    color: #00FF00;
+}
+
+.featured {
+	font-weight: bold; 
+}
+
+section > p { 
+    background-color: yellow;
+}
