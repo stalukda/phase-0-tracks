@@ -1,3 +1,29 @@
+footer {
+  clear: both;
+}
+
 body {
-	background-color: yellow; 
+  background-color: green;
+}
+h1, h2 {
+  color: pink; 
+  font-family: arial; 
+  padding: 10px; 
+  text-decoration: underline
+}
+
+.column-1 {
+  background-color: yellow; 
+  border-style: dotted; 
+  width: 48%;
+  float: left;
+  /* display: inline-block; */ 
+}
+
+.column-2 {
+  background-color: blue; 
+  border-style: dotted;
+  width: 50%;
+  float: right;
+  /* display: inline-block; */ 
 }
