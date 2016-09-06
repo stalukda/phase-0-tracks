@@ -25,14 +25,21 @@ end
 
 # #Release 1: Calculate Fibonacci Numbers
 
+# create a fib method that takes the length of the array as a parameter
 def fibonacci(x)
+
+#create a pre-filled array for 0 & 1 
     array = [0,1]
     if x == 0 || x == 1
     	return array[x] = x
     end  
+
+#implement the fib sequence - looping through the array, 
+#add the last two numbers to each other so that the array gets populated 
   	while array.length < x
     	array[array.length] = array[-1] + array[-2]
   	end
+#show the sum of the array 
   	sum = 0
 	array.each { |z| sum+=z }
 	p "Here is the array all added up: #{sum}"
