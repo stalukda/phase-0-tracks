@@ -5,5 +5,66 @@ class Puppy
     toy
   end
 
+  def speak(num)
+  	num.times {puts "Woof"}
+  end
+
+  def roll_over
+  	puts "*rolls over*"
+  end
+  
+  def dog_years(int)
+  	return int *7 
+  end
+
+  def wag_tail(num)
+  	num.times {puts "*wag tail*"}  	
+  end
+
+  def initialize 
+  	puts "initializing new puppy instance"
+  end
 end
 
+# rover = Puppy.new
+# rover.fetch("Ball")
+# rover.speak(3)
+# rover.roll_over
+# p rover.dog_years(5)
+# rover.wag_tail(4)
+
+# In puppy_methods.rb, design and implement your own class below the Puppy class 
+# -- anything you'd like, but it should have an initialize method and at least two other instance methods.
+
+class Fruit
+	def color(str)
+		puts "I am #{str} in color"
+	end
+
+	def calories(num)
+		puts "I am #{num} calories"
+	end
+
+	def initialize 
+		puts "I'm a fruit!"
+	end 
+end 
+
+# apple = Fruit.new
+# apple.color("red")
+# apple.calories(50)
+
+# Use a loop to make 50 instances of your class. 
+#Ruby blocks are between do/end or {}
+
+all_fruits = []
+
+50.times do 
+	all_fruits << Fruit.new 
+end
+
+# Iterate over that data structure using .each and call the instance methods you wrote on each instance. 
+
+all_fruits.each {|fruit| fruit.color("red")}
+all_fruits.each {|fruit| fruit.calories("10")}
+# So if you wrote a Gymnast class, this is where you'd call .flip and .jump on each of your instances of Gymnast.
