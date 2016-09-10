@@ -37,12 +37,12 @@ end
 # -- anything you'd like, but it should have an initialize method and at least two other instance methods.
 
 class Fruit
-	def color(str)
-		puts "I am #{str} in color"
+	def crunch(int)
+		int.times {puts "*You bit me! Crunch*"}
 	end
 
-	def calories(num)
-		puts "I am #{num} calories"
+	def peel(int)
+		int.times {puts "*Peeling*"}
 	end
 
 	def initialize 
@@ -65,6 +65,6 @@ end
 
 # Iterate over that data structure using .each and call the instance methods you wrote on each instance. 
 
-all_fruits.each {|fruit| fruit.color("red")}
-all_fruits.each {|fruit| fruit.calories("10")}
+all_fruits.each {|fruit| fruit.crunch(10)}
+all_fruits.each {|fruit| fruit.peel(3)}
 # So if you wrote a Gymnast class, this is where you'd call .flip and .jump on each of your instances of Gymnast.
