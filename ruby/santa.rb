@@ -33,11 +33,12 @@ class Santa
 		p @reindeer_ranking
 	end
 
-#Code refactorerd above 
+# Setter Code refactored above 
 	# def gender=(new_gender)
 	# 	@gender = new_gender
 	# end	
 
+# Getter code refactorerd above 
 	# def age
 	# 	@age
 	# end
@@ -48,6 +49,7 @@ class Santa
 
 end
 
+# Test calls: 
 # nick = Santa.new("male", "white", "white")
 # nick.speak
 # nick.eat_milk_and_cookies("chocholate chip")
@@ -77,7 +79,7 @@ example_hair_colors = ["red", "blonde", "raven", "bald", "blue", "brunette", "pa
 #   santas << Santa.new(example_genders[i], example_ethnicities[i], example_hair_colors[i])
 # end
 
-# Create your Santas with a randomly selected gender and a randomly selected ethnicity. 
+# Create your Santas with a randomly selected gender and a randomly selected ethnicity (+ hair color). 
 100.times do
   santas << Santa.new(example_genders.sample, example_ethnicities.sample, example_hair_colors.sample)
 end
