@@ -128,9 +128,11 @@ What are some ways to iterate through a hash?
 
   
 When refactoring virus_effects, what stood out to you about the variables, if anything?
+#The variables passed parameters(variables) that they did not need to since those variables were accessible throughout the instance. 
+ 
 What concept did you most solidify in this challenge? 
 
-The variables were descriptive of their intended actions, which was nice. The concept I most solidified in the challenge with our guide's support was scoping, esp. instance scope. 
+#The concept I most solidified in the challenge with our guide's support was scoping, esp. instance scope.
 
   
 =end
