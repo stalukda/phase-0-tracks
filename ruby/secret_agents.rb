@@ -14,21 +14,25 @@ end
 
 # p encrypt ("abc")
 
+#decrypt... 
 # method that takes a string as an argument 
-# break up each of the strings into letters 
-# find the index of each letter
+# create a reference alphabet
 # compare the letter against the indexed alphabet
-# use the alphabet to figure out how to decrease by a letter 
+# use the alphabet to decrease by a letter 
 
 def decrypt(str)
 	original_index = 0
 	reference = "abcdefghijklmnopqrstuvwxyz"
 	while original_index < str.length
-      new_letter_index = reference.index(str[original_index]) 
-      p reference[new_letter_index -=1]  
+      #this is the index, in the reference string, for the input letter 
+      old_letter_index = reference.index(str[original_index]) 
+      #reversing one letter in the reference string 
+      p reference[old_letter_index -=1]  
+      #advancing to the next letter in the original input 
       original_index += 1
 	end
 end
+
 # p decrypt ("bcd")
 # p decrypt("afe")
 
