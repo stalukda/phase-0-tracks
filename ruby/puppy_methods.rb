@@ -51,8 +51,8 @@ class Fruit
 end 
 
 # apple = Fruit.new
-# apple.color("red")
-# apple.calories(50)
+# apple.crunch(3)
+# apple.peel(2)
 
 # Use a loop to make 50 instances of your class. 
 #Ruby blocks are between do/end or {}
