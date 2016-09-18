@@ -7,8 +7,8 @@ describe Game do
     expect(game.secret_word("dame")).to eq ["d", "a", "m", "e"]
     end
 
-    it "sets the number of turns based on the number of letters of the word" do
-    expect(game.num_turns(["d", "a", "m", "e"])).to eq 4
+  it "sets the number of turns based on the number of letters of the word" do
+    game.secret_word("dame")
+    expect(game.turns).to eq 4
   end
-
 end
