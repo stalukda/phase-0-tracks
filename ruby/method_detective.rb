@@ -34,6 +34,7 @@ p "Elementary,    my   dear        Watson!".squeeze(" ")
 "z".ord
 # => 122 
 # (What is the significance of the number 122 in relation to the character z?)
+#its the ASCII value 
 
 "How many times does the letter 'a' appear in this string?".count "a"
 # => 4
