@@ -11,7 +11,7 @@ def search_array (array, int)
 			puts "You matched your input of #{int} at index number: #{index}!"
 # if you don't find the integer, return nil 
 		else
-			puts "doesn't work!"	
+			puts "doesn't work!!"	
 		end 
 		index += 1
 	end
