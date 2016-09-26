@@ -25,3 +25,15 @@ menu = {
 p menu[:chicken_dish][:ingredients][3]
 p menu[:fish_dish][:price][:full_portion]
 p menu[:shrimp_dish][:ingredients][1].upcase
+
+nested_data_structure = {
+	breakfast: ["honey", "yogurt", "pecans"], 
+	lunch: ["chicken", "salad", "soup"],
+	dinner: ["salad", "mango_sticky_rice" => {
+		calories: 90, 
+		taste: "amazing"
+	}]
+}
+
+p nested_data_structure[:breakfast][0]
+p nested_data_structure[:dinner][1]["mango_sticky_rice"]
