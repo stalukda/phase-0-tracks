@@ -2,7 +2,7 @@
 # Store their responses as values (in key:value pair format)
 
 array_pract = []
-array_pract << "Hi"
+array_pract << "Hi!"
 array_pract << "Hello"
 p array_pract
 p array_pract[0]
