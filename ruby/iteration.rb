@@ -54,4 +54,4 @@ hash_items = {
 
 #A method that will remove items 
 #from a data structure until the condition in the block evaluates to false, then stops
-#
+#arr.drop_while {|x| x > 2}
