@@ -21,9 +21,14 @@
 # Wiggle waggle
 
 class Puppy
+	def waggle
+		"*waggle"
+	end 
 end
 
 fido = Puppy.new
+
+p fido.waggle
 
 Puppy.dup
 
