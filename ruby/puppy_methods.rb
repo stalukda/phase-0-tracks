@@ -50,21 +50,27 @@ class Fruit
 	end 
 end 
 
+arr = []
+50.times {arr << Fruit.new}
+
+arr.each do |fruit|
+  fruit.peel(2)
+end 
+
 # apple = Fruit.new
-# apple.crunch(3)
-# apple.peel(2)
 
 # Use a loop to make 50 instances of your class. 
 #Ruby blocks are between do/end or {}
 
-all_fruits = []
+# all_fruits = []
 
-50.times do 
-	all_fruits << Fruit.new 
-end
+# 50.times do 
+# 	all_fruits << Fruit.new 
+# end
 
-# Iterate over that data structure using .each and call the instance methods you wrote on each instance. 
+# # Iterate over that data structure using .each and call the instance methods you wrote on each instance. 
 
-all_fruits.each {|fruit| fruit.crunch(10)}
-all_fruits.each {|fruit| fruit.peel(3)}
+# all_fruits.each {|fruit| fruit.crunch(10)}
+# all_fruits.each {|fruit| fruit.peel(3)}
 # So if you wrote a Gymnast class, this is where you'd call .flip and .jump on each of your instances of Gymnast.
+
