@@ -54,7 +54,7 @@ arr = []
 50.times {arr << Fruit.new}
 
 arr.each do |fruit|
-  fruit.peel(1)
+  fruit.peel(2)
 end 
 
 # apple = Fruit.new
