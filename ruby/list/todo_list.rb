@@ -1,10 +1,13 @@
 class TodoList
 
-# attr_accessor :list 
-
 	def initialize(arr)
 		@arr = arr
 	end 
+
+#alt to consider: 
+# def initialize(list = [])
+# 	@arr = list 
+# end 
 
 	def get_items
 		@arr
