@@ -1,0 +1,98 @@
+(1) Display the information in one table (either table is fine).
+
+Query: 
+SELECT * FROM food;
+
+Output: 
+1|chicken|100|2
+2|milk|60|1
+3|papaya|30|4
+4|chips|200|3
+
+Query:
+SELECT * FROM food_groups;
+
+Output: 
+1|dairy
+2|meat
+3|carbs
+4|fruits + veg
+sqlite> 
+
+(2) Update an item that meets some condition (you can choose a condition that makes sense).
+
+Query: 
+UPDATE food SET name = "cupcake" WHERE name = "chips";
+
+Output: 
+1|chicken|100|2
+2|milk|60|1
+3|papaya|30|4
+4|cupcake|200|3
+
+(3) Display the information in both tables using one query.
+
+Query: 
+SELECT * FROM food, food_groups WHERE food.type = food_groups.id;
+
+Output: 
+1|chicken|100|2|2|meat
+2|milk|60|1|1|dairy
+3|papaya|30|4|4|fruits + veg
+4|cupcake|200|3|3|carbs
+
+(4)Display a narrower selection of columns (fewer columns than all of them, in other words) from both tables using one query.
+
+Query: 
+SELECT food.id, food.name, food.calories, food.type, food_groups.name FROM food JOIN food_groups ON food.type = food_groups.id;
+
+Output: 
+1|chicken|100|2|meat
+2|milk|60|1|dairy
+3|papaya|30|4|fruits + veg
+4|cupcake|200|3|carbs
+
+(5) Delete an item that meets some condition (you can choose a condition that makes sense).
+Query: 
+DELETE FROM food WHERE name="cupcake";
+
+Output: 
+1|chicken|100|2
+2|milk|60|1
+3|papaya|30|4
+
+(6)Release 3: Research on Your Own
+
+Query: 
+SELECT food.id, food.name, food.calories, food_groups.name 
+FROM food
+INNER JOIN food_groups
+ON food.type = food_groups.id;
+
+Output: 
+1|chicken|100|meat
+2|milk|60|dairy
+3|papaya|30|fruits + veg
+
+Query: 
+INSERT INTO food (name, calories, type) VALUES ("Gumdrop", 25, 5);
+SELECT food.id, food.name, food.calories, food_groups.name 
+FROM food
+LEFT JOIN food_groups
+ON food.type = food_groups.id;
+
+Output: 
+1|chicken|100|meat
+2|milk|60|dairy
+3|papaya|30|fruits + veg
+4|Gumdrop|25|
+
+Note: This prints out gumdrop even though the value for it is null 
+
+
+
+
+
+
+
+
